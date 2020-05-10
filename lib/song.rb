@@ -16,7 +16,7 @@ class Song
     song = Song.new(file_name_split[1])
     artist = Artist.new(file_name_split[0])
     song.artist = artist
-    Artist.songs << song
+    artist.songs << song
     
     return song
   end
