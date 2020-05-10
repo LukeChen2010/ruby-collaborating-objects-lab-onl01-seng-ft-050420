@@ -24,6 +24,7 @@ class Song
   end
   
   def artist_name(name)
-    if Artist.all.include? {|x| x.name == name}
+    artist = Artists.all.find {|x| x.name == name}
+    if artist = nil
   end
 end
