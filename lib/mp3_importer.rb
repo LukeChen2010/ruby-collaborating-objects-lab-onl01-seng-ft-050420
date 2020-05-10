@@ -3,6 +3,7 @@ class MP3Importer
   
   def initialize(path)
     @path = path
+    @files = []
     
     Dir.entries(path).each do |x|
       @files << File.basename(x)
