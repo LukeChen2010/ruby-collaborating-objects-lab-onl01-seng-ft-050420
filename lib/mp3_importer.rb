@@ -5,7 +5,7 @@ class MP3Importer
     @path = path
     
     Dir.entries(path).each do |x|
-      @files << x
+      @files << File.basename(x)
     end
   end
   
