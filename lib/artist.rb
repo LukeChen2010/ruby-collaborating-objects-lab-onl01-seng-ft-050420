@@ -21,4 +21,7 @@ class Artist
     
     return artist
   end
+  
+  def print_songs
+  end
 end
