@@ -3,10 +3,13 @@ class MP3Importer
   
   def initialize(path)
     @path = path
+    
+    Dir.entries(path).each do |x|
+      @files << x
+    end
   end
   
   def files(path)
-    Dir.entries(path).each do |x|
-    end
+    
   end
 end
