@@ -9,4 +9,7 @@ class MP3Importer
       @files << File.basename(x) if File.extname(x) == ".mp3"
     end
   end
+  
+  def import
+  end
 end
