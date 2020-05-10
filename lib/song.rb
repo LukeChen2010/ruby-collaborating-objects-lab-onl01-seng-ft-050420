@@ -24,8 +24,7 @@ class Song
   end
   
   def artist_name(name)
-    artist = Artist.all.find {|x| x.name == name}
-    artist = Artist.new(name) if artist == NIL
+    artist = Artist.find_or_create_by_name(name)
     
     @artist = artist
   end
