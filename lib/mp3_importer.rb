@@ -6,6 +6,7 @@ class MP3Importer
   end
   
   def files(path)
-    Dir[path]
+    Dir[path].each do |x|
+    end
   end
 end
