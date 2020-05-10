@@ -16,5 +16,9 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
+    artist = @@all.find {|x| x.name == name}
+    artist = self.new(name) if artist == NIL
+    
+    return artist
   end
 end
