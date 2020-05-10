@@ -10,5 +10,8 @@ class Artist
   def self.all
     return @@all
   end
+  
+  def self.new_by_filename
+  end
 
 end
