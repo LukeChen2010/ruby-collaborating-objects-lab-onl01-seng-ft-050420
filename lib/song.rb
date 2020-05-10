@@ -22,4 +22,11 @@ class Song
     
     return song
   end
+  
+  def artist_name(name)
+    artist = Artist.all.find {|x| x.name == name}
+    artist = Artist.new(name) if artist == NIL
+    
+    @artist = artist
+  end
 end
