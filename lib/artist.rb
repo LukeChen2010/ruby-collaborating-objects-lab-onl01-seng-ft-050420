@@ -12,5 +12,6 @@ class Artist
   end
   
   def songs
+    return @@songs.find {|x| }
   end
 end
