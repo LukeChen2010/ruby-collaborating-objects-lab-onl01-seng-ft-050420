@@ -6,7 +6,7 @@ class MP3Importer
     @files = []
     
     Dir.entries(path).each do |x|
-      @files << File.basename(x)
+      @files << File.basename(x) if File.extname(x) == ".mp3"
     end
   end
 end
