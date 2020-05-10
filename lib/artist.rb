@@ -11,5 +11,5 @@ class Artist
     return @@all
   end
   
-
+  
 end
