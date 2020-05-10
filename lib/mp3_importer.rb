@@ -9,8 +9,4 @@ class MP3Importer
       @files << File.basename(x)
     end
   end
-  
-  def files(path)
-    
-  end
 end
