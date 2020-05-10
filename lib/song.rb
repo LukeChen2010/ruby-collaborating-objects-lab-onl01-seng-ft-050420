@@ -22,4 +22,6 @@ class Song
     
     return song
   end
+  
+  def artist_name
 end
