@@ -12,6 +12,6 @@ class Artist
   end
   
   def songs
-    return @@songs.find {|x| }
+    return @@songs.find {|x| x.artist == self}
   end
 end
