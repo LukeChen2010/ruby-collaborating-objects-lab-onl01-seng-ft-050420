@@ -15,6 +15,7 @@ class Song
     file_name_split = file_name.split(" - ")
     song = Song.new(file_name_split[1])
     artist = Artist.new(file_name_split[0])
+    Artist.all << song
     song.artist = artist
     return song
   end
