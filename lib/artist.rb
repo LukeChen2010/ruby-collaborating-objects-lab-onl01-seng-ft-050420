@@ -11,5 +11,6 @@ class Artist
     return @@all
   end
   
-  
+  def songs
+  end
 end
