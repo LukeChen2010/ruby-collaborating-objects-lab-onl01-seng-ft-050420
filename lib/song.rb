@@ -23,5 +23,7 @@ class Song
     return song
   end
   
-  def artist_name
+  def artist_name(name)
+    if Artist.all.include? {|x| x.name == name}
+  end
 end
