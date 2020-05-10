@@ -11,10 +11,6 @@ class Artist
     return @@all
   end
   
-  def songs
-    return @@songs.find {|x| x.artist == self}
-  end
-  
   def add_song(song)
   end
 end
